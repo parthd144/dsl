@@ -5,15 +5,15 @@ A=[[0 for j in range(c)]for i in range(r)]
 for i in range(r):
     for j in range(c):
         A[i][j]=int(input("Enter elements : "))
-print("\nMatrix A : ",A)
-print("\nMatrix B : ")
+print("\nMatrix A = ",A)
+print("\nMatrix B")
 p=int(input("Number of rows : "))
 q=int(input("Number of columns : "))
 B=[[0 for j in range(q)]for i in range(p)]
 for i in range(p):
     for j in range(q):
         B[i][j]=int(input("Enter elements : "))
-print("\nMatrix B : ",B)
+print("\nMatrix B = ",B)
 result=[[0 for j in range(c)]for i in range(r)]
 
 def add():
@@ -31,7 +31,8 @@ def sub():
 def mul():
     for i in range(r):
         for j in range(c):
-            result[i][j]=A[i][j]*B[i][j]
+            for k in range(r):
+                result[i][j]+=A[i][k]*B[k][j]
     print("Multiplication of two matrices is : ",result)
 
 def transpose():
