@@ -31,7 +31,7 @@ def minimum():
     print("Lowenst score in class is : ",mini)
 
 def freq():
-    hifreq=marks[0]
+    highfreq=marks[0]
     for i in marks:
         if i==highfreq:
             highfreq=i
