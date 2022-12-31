@@ -28,14 +28,14 @@ def minimum():
     for i in marks:
         if i<mini:
             mini=i
-    print("Lowenst score in class is : ",mini)
+    print("Lowest score in class is : ",mini)
 
 def freq():
-    highfreq=marks[0]
+    hifreq=marks[0]
     for i in marks:
-        if i==highfreq:
-            highfreq=i
-    print("Marks with highest frequency is : ",highfreq)
+        if i==hifreq:
+            hifreq=i
+    print("Score with highest frequency = ",hifreq)
 
 def menu():
     print("\n_________SELECT AN OPTION_________")
